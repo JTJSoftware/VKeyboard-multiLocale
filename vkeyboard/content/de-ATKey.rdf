@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+
+<RDF:RDF
+    xmlns:VKBoard="VKBoard#"
+    xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description about="VKBoard">
+
+<!-- Alpha key pad row 1 buttons bag-->
+   <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:alphaRow1">
+      <RDF:li resource="urn:VKBoard:R1btn1"/>
+      <RDF:li resource="urn:VKBoard:R1btn2"/>
+      <RDF:li resource="urn:VKBoard:R1btn3"/>
+      <RDF:li resource="urn:VKBoard:R1btn4"/>
+      <RDF:li resource="urn:VKBoard:R1btn5"/>
+      <RDF:li resource="urn:VKBoard:R1btn6"/>
+      <RDF:li resource="urn:VKBoard:R1btn7"/>
+      <RDF:li resource="urn:VKBoard:R1btn8"/>
+      <RDF:li resource="urn:VKBoard:R1btn9"/>
+      <RDF:li resource="urn:VKBoard:R1btn10"/>
+      <RDF:li resource="urn:VKBoard:R1btn11"/>
+      <RDF:li resource="urn:VKBoard:R1btn12"/>
+      <RDF:li resource="urn:VKBoard:R1btn13"/>
+      <RDF:li resource="urn:VKBoard:btnDel"/>
+      <!-- <RDF:li resource="urn:VKBoard:btnTglpad"/> -->
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+<!-- Alpha row 1 descriptions -->
+<!-- Actually VKBoard:id definitions are not used by the template builder 
+     The template builder assigns the about value as the id
+-->
+   <VKBoard:Description about="urn:VKBoard:R1btn1" VKBoard:id="kbd1"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn1" VKBoard:label="Q"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn1" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn1" VKBoard:action="vkeyboard.VKhandlefocus('q');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn2" VKBoard:id="kbd2"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn2" VKBoard:label="W"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn2" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn2" VKBoard:action="vkeyboard.VKhandlefocus('w');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn3" VKBoard:id="kbd3"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn3" VKBoard:label="E"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn3" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn3" VKBoard:action="vkeyboard.VKhandlefocus('e');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn4" VKBoard:id="kbd4"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn4" VKBoard:label="R"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn4" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn4" VKBoard:action="vkeyboard.VKhandlefocus('r');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn5" VKBoard:id="kbd5"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn5" VKBoard:label="T"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn5" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn5" VKBoard:action="vkeyboard.VKhandlefocus('t');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn6" VKBoard:id="kbd6"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn6" VKBoard:label="Z"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn6" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn6" VKBoard:action="vkeyboard.VKhandlefocus('z');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn7" VKBoard:id="kbd7"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn7" VKBoard:label="U"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn7" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn7" VKBoard:action="vkeyboard.VKhandlefocus('u');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn8" VKBoard:id="kbd8"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn8" VKBoard:label="I"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn8" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn8" VKBoard:action="vkeyboard.VKhandlefocus('i');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn9" VKBoard:id="kbd9"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn9" VKBoard:label="O"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn9" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn9" VKBoard:action="vkeyboard.VKhandlefocus('o');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn10" VKBoard:id="kbd10"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn10" VKBoard:label="P"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn10" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn10" VKBoard:action="vkeyboard.VKhandlefocus('p');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn11" VKBoard:id="kbd11"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn11" VKBoard:label="&#x00DC;"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn11" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn11" VKBoard:action="vkeyboard.VKhandlefocus('\u00fc');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R1btn12" VKBoard:id="kbd12"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn12" VKBoard:label="?"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn12" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn12" VKBoard:action="vkeyboard.VKhandlefocus('?');"/>
+
+
+   <VKBoard:Description about="urn:VKBoard:R1btn13" VKBoard:id="kbd13"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn13" VKBoard:label="@"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn13" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R1btn13" VKBoard:action="vkeyboard.VKhandlefocus('@');"/>
+
+   <VKBoard:Description about="urn:VKBoard:btnDel" VKBoard:id="kbddel"/>
+   <VKBoard:Description about="urn:VKBoard:btnDel" VKBoard:label="Entf"/>
+   <VKBoard:Description about="urn:VKBoard:btnDel" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:btnDel" VKBoard:action="vkeyboard.VKhandledelete();"/>
+   <VKBoard:Description about="urn:VKBoard:btnDel" VKBoard:ttip="Entfernen contents of focused field"/>
+<!--
+   <VKBoard:Description about="urn:VKBoard:btnTglpad" VKBoard:id="kbd14"/>
+   <VKBoard:Description about="urn:VKBoard:btnTglpad" VKBoard:label="Tgl"/>
+   <VKBoard:Description about="urn:VKBoard:btnTglpad" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:btnTglpad" VKBoard:action="vkeyboard.VKtoggle_pad();"/>
+   <VKBoard:Description about="urn:VKBoard:btnTglpad" VKBoard:ttip="Toggles the numeric/special keypads"/>
+-->
+<!-- Alpha key pad row 2 -->
+   <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:alphaRow2">
+      <RDF:li resource="urn:VKBoard:R2btn1"/>
+      <RDF:li resource="urn:VKBoard:R2btn2"/>
+      <RDF:li resource="urn:VKBoard:R2btn3"/>
+      <RDF:li resource="urn:VKBoard:R2btn4"/>
+      <RDF:li resource="urn:VKBoard:R2btn5"/>
+      <RDF:li resource="urn:VKBoard:R2btn6"/>
+      <RDF:li resource="urn:VKBoard:R2btn7"/>
+      <RDF:li resource="urn:VKBoard:R2btn8"/>
+      <RDF:li resource="urn:VKBoard:R2btn9"/>
+      <RDF:li resource="urn:VKBoard:R2btn10"/>
+      <RDF:li resource="urn:VKBoard:R2btn11"/>
+      <RDF:li resource="urn:VKBoard:R2btn12"/>
+      <RDF:li resource="urn:VKBoard:btnBackspace"/>
+      <RDF:li resource="urn:VKBoard:btnCapslock"/>
+      <RDF:li resource="urn:VKBoard:btnEnter"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn1" VKBoard:id="kbd15"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn1" VKBoard:label="A"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn1" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn1" VKBoard:action="vkeyboard.VKhandlefocus('a');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn2" VKBoard:id="kbd16"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn2" VKBoard:label="S"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn2" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn2" VKBoard:action="vkeyboard.VKhandlefocus('s');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn3" VKBoard:id="kbd17"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn3" VKBoard:label="D"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn3" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn3" VKBoard:action="vkeyboard.VKhandlefocus('d');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn4" VKBoard:id="kbd18"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn4" VKBoard:label="F"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn4" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn4" VKBoard:action="vkeyboard.VKhandlefocus('f');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn5" VKBoard:id="kbd19"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn5" VKBoard:label="G"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn5" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn5" VKBoard:action="vkeyboard.VKhandlefocus('g');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn6" VKBoard:id="kbd20"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn6" VKBoard:label="H"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn6" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn6" VKBoard:action="vkeyboard.VKhandlefocus('h');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn7" VKBoard:id="kbd21"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn7" VKBoard:label="J"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn7" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn7" VKBoard:action="vkeyboard.VKhandlefocus('j');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn8" VKBoard:id="kbd22"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn8" VKBoard:label="K"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn8" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn8" VKBoard:action="vkeyboard.VKhandlefocus('k');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn9" VKBoard:id="kbd23"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn9" VKBoard:label="L"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn9" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn9" VKBoard:action="vkeyboard.VKhandlefocus('l');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn10" VKBoard:id="kbd24"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn10" VKBoard:label="&#x00D6;"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn10" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn10" VKBoard:action="vkeyboard.VKhandlefocus('\u00F6');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn11" VKBoard:id="kbd25"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn11" VKBoard:label="&#x00C4;"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn11" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn11" VKBoard:action="vkeyboard.VKhandlefocus('\u00E4');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R2btn12" VKBoard:id="kbd25"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn12" VKBoard:label="&#x00DF;"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn12" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R2btn12" VKBoard:action="vkeyboard.VKhandlefocus('\u00DF');"/>
+
+   <VKBoard:Description about="urn:VKBoard:btnCapslock" VKBoard:id="VK_shift"/>
+   <VKBoard:Description about="urn:VKBoard:btnCapslock" VKBoard:label="&#x21CA;"/>
+   <VKBoard:Description about="urn:VKBoard:btnCapslock" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:btnCapslock" VKBoard:ontxt="&#x21D3;"/>
+   <VKBoard:Description about="urn:VKBoard:btnCapslock" VKBoard:offtxt="&#x21CA;"/>
+   <VKBoard:Description about="urn:VKBoard:btnCapslock" VKBoard:action="vkeyboard.capslock();"/>
+   <VKBoard:Description about="urn:VKBoard:btnCapslock" VKBoard:ttip="Caps lock"/>
+
+   <VKBoard:Description about="urn:VKBoard:btnBackspace" VKBoard:id="kbd26"/>
+   <VKBoard:Description about="urn:VKBoard:btnBackspace" VKBoard:label="backspace"/>
+   <VKBoard:Description about="urn:VKBoard:btnBackspace" VKBoard:class="VKeyB"/>
+   <VKBoard:Description about="urn:VKBoard:btnBackspace" VKBoard:action="vkeyboard.VKbackspace();"/>
+
+   <VKBoard:Description about="urn:VKBoard:btnEnter" VKBoard:id="kbdEnter"/>
+   <VKBoard:Description about="urn:VKBoard:btnEnter" VKBoard:label="Enter"/>
+   <VKBoard:Description about="urn:VKBoard:btnEnter" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:btnEnter" VKBoard:action="vkeyboard.VKEnter();"/>
+   <VKBoard:Description about="urn:VKBoard:btnEnter" VKBoard:ttip="Enter form"/>
+
+<!-- Alpha key pad row 3 -->
+   <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:alphaRow3">
+      <RDF:li resource="urn:VKBoard:R3btn1"/>
+      <RDF:li resource="urn:VKBoard:R3btn2"/>
+      <RDF:li resource="urn:VKBoard:R3btn3"/>
+      <RDF:li resource="urn:VKBoard:R3btn4"/>
+      <RDF:li resource="urn:VKBoard:R3btn5"/>
+      <RDF:li resource="urn:VKBoard:R3btn6"/>
+      <RDF:li resource="urn:VKBoard:R3btn7"/>
+      <RDF:li resource="urn:VKBoard:R3btn8"/>
+      <RDF:li resource="urn:VKBoard:R3btn9"/>
+      <RDF:li resource="urn:VKBoard:R3btn10"/>
+      <RDF:li resource="urn:VKBoard:R3btn11"/>
+      <RDF:li resource="urn:VKBoard:R3btn12"/>
+      <RDF:li resource="urn:VKBoard:btnAltGR"/>
+      <RDF:li resource="urn:VKBoard:btnCrlf"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn1" VKBoard:id="kbd24"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn1" VKBoard:label="Y"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn1" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn1" VKBoard:action="vkeyboard.VKhandlefocus('y');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn2" VKBoard:id="kbd25"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn2" VKBoard:label="X"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn2" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn2" VKBoard:action="vkeyboard.VKhandlefocus('x');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn3" VKBoard:id="kbd26"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn3" VKBoard:label="C"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn3" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn3" VKBoard:action="vkeyboard.VKhandlefocus('c');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn4" VKBoard:id="kbd27"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn4" VKBoard:label="V"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn4" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn4" VKBoard:action="vkeyboard.VKhandlefocus('v');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn5" VKBoard:id="kbd28"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn5" VKBoard:label="B"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn5" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn5" VKBoard:action="vkeyboard.VKhandlefocus('b');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn6" VKBoard:id="kbd29"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn6" VKBoard:label="N"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn6" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn6" VKBoard:action="vkeyboard.VKhandlefocus('n');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn7" VKBoard:id="kbd30"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn7" VKBoard:label="M"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn7" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn7" VKBoard:action="vkeyboard.VKhandlefocus('m');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn8" VKBoard:id="kbd31"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn8" VKBoard:label=","/>
+   <VKBoard:Description about="urn:VKBoard:R3btn8" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn8" VKBoard:action="vkeyboard.VKhandlefocus(',');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn9" VKBoard:id="kbd32"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn9" VKBoard:label="."/>
+   <VKBoard:Description about="urn:VKBoard:R3btn9" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn9" VKBoard:action="vkeyboard.VKhandlefocus('.');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn10" VKBoard:id="kbd33"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn10" VKBoard:label="/"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn10" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn10" VKBoard:action="vkeyboard.VKhandlefocus('/');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn11" VKBoard:id="kbd37"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn11" VKBoard:label="!"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn11" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn11" VKBoard:action="vkeyboard.VKhandlefocus('!');"/>
+
+   <VKBoard:Description about="urn:VKBoard:R3btn12" VKBoard:id="kbd38"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn12" VKBoard:label="Space"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn12" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:R3btn12" VKBoard:action="vkeyboard.VKhandlefocus('&#32;');"/>
+
+   <VKBoard:Description about="urn:VKBoard:btnAltGR" VKBoard:id="kbdAltGR"/>
+   <VKBoard:Description about="urn:VKBoard:btnAltGR" VKBoard:label="Alt GR"/>
+   <VKBoard:Description about="urn:VKBoard:btnAltGR" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:btnAltGR" VKBoard:ontxt="&#x21D3;"/>
+   <VKBoard:Description about="urn:VKBoard:btnAltGR" VKBoard:offtxt="&#x21CA;"/>
+   <VKBoard:Description about="urn:VKBoard:btnAltGR" VKBoard:action="vkeyboard.rebuildKeyboard('ALTde-ATKey.rdf');"/>
+   <VKBoard:Description about="urn:VKBoard:btnAltGR" VKBoard:ttip="toggle Alt GR keys"/>
+
+   <VKBoard:Description about="urn:VKBoard:btnCrlf" VKBoard:id="kbdCrlf"/>
+   <VKBoard:Description about="urn:VKBoard:btnCrlf" VKBoard:label="&#8629;"/>
+   <VKBoard:Description about="urn:VKBoard:btnCrlf" VKBoard:class="VKey"/>
+   <VKBoard:Description about="urn:VKBoard:btnCrlf" VKBoard:action="vkeyboard.VKhandlefocus('\n');"/>
+   <VKBoard:Description about="urn:VKBoard:btnCrlf" VKBoard:ttip="carriage return-linefeed"/>
+
+<!-- Numeric key pad -->
+   <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:numpadRow1">
+       <RDF:li resource="urn:VKBoard:numkey1"/>
+       <RDF:li resource="urn:VKBoard:numkey2"/>
+       <RDF:li resource="urn:VKBoard:numkey3"/>
+       <RDF:li resource="urn:VKBoard:numkey4"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:numkey1" VKBoard:label="7"/>
+   <VKBoard:Description about="urn:VKBoard:numkey1" VKBoard:action="vkeyboard.VKhandlefocus('7');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey1" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:numkey2" VKBoard:label="8"/>
+   <VKBoard:Description about="urn:VKBoard:numkey2" VKBoard:action="vkeyboard.VKhandlefocus('8');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey2" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:numkey3" VKBoard:label="9"/>
+   <VKBoard:Description about="urn:VKBoard:numkey3" VKBoard:action="vkeyboard.VKhandlefocus('9');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey3" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:numkey4" VKBoard:label="-"/>
+   <VKBoard:Description about="urn:VKBoard:numkey4" VKBoard:action="vkeyboard.VKhandlefocus('-');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey4" VKBoard:class="VKey"/>
+
+   <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:numpadRow2">
+       <RDF:li resource="urn:VKBoard:numkey5"/>
+       <RDF:li resource="urn:VKBoard:numkey6"/>
+       <RDF:li resource="urn:VKBoard:numkey7"/>
+       <RDF:li resource="urn:VKBoard:numkey8"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:numkey5" VKBoard:label="4"/>
+   <VKBoard:Description about="urn:VKBoard:numkey5" VKBoard:action="vkeyboard.VKhandlefocus('4');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey5" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:numkey6" VKBoard:label="5"/>
+   <VKBoard:Description about="urn:VKBoard:numkey6" VKBoard:action="vkeyboard.VKhandlefocus('5');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey6" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:numkey7" VKBoard:label="6"/>
+   <VKBoard:Description about="urn:VKBoard:numkey7" VKBoard:action="vkeyboard.VKhandlefocus('6');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey7" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:numkey8" VKBoard:label="+"/>
+   <VKBoard:Description about="urn:VKBoard:numkey8" VKBoard:action="vkeyboard.VKhandlefocus('+');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey8" VKBoard:class="VKey"/>
+
+   <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:numpadRow3">
+       <RDF:li resource="urn:VKBoard:numkey9"/>
+       <RDF:li resource="urn:VKBoard:numkey10"/>
+       <RDF:li resource="urn:VKBoard:numkey11"/>
+       <RDF:li resource="urn:VKBoard:numkey12"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:numkey9" VKBoard:label="1"/>
+   <VKBoard:Description about="urn:VKBoard:numkey9" VKBoard:action="vkeyboard.VKhandlefocus('1');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey9" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:numkey10" VKBoard:label="2"/>
+   <VKBoard:Description about="urn:VKBoard:numkey10" VKBoard:action="vkeyboard.VKhandlefocus('2');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey10" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:numkey11" VKBoard:label="3"/>
+   <VKBoard:Description about="urn:VKBoard:numkey11" VKBoard:action="vkeyboard.VKhandlefocus('3');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey11" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:numkey12" VKBoard:label="0"/>
+   <VKBoard:Description about="urn:VKBoard:numkey12" VKBoard:action="vkeyboard.VKhandlefocus('0');"/>
+   <VKBoard:Description about="urn:VKBoard:numkey12" VKBoard:class="VKey"/>
+
+<!-- special keypad -->
+  <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:specialpadRow1">
+       <RDF:li resource="urn:VKBoard:spckey1"/>
+       <RDF:li resource="urn:VKBoard:spckey2"/>
+       <RDF:li resource="urn:VKBoard:spckey3"/>
+       <RDF:li resource="urn:VKBoard:spckey4"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:spckey1" VKBoard:label="&#40;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey1" VKBoard:action="vkeyboard.VKhandlefocus('&#40;');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey1" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey2" VKBoard:label="&#41;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey2" VKBoard:action="vkeyboard.VKhandlefocus('&#41;');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey2" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey3" VKBoard:label="#"/>
+   <VKBoard:Description about="urn:VKBoard:spckey3" VKBoard:action="vkeyboard.VKhandlefocus('#');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey3" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey4" VKBoard:label="$"/>
+   <VKBoard:Description about="urn:VKBoard:spckey4" VKBoard:action="vkeyboard.VKhandlefocus('$');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey4" VKBoard:class="VKey"/>
+
+
+  <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:specialpadRow2">
+       <RDF:li resource="urn:VKBoard:spckey5"/>
+       <RDF:li resource="urn:VKBoard:spckey6"/>
+       <RDF:li resource="urn:VKBoard:spckey7"/>
+       <RDF:li resource="urn:VKBoard:spckey8"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:spckey5" VKBoard:label="_"/>
+   <VKBoard:Description about="urn:VKBoard:spckey5" VKBoard:action="vkeyboard.VKhandlefocus('_');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey5" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey6" VKBoard:label="&amp;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey6" VKBoard:action="vkeyboard.VKhandlefocus('&amp;');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey6" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey7" VKBoard:label="*"/>
+   <VKBoard:Description about="urn:VKBoard:spckey7" VKBoard:action="vkeyboard.VKhandlefocus('*');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey7" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey8" VKBoard:label="^"/>
+   <VKBoard:Description about="urn:VKBoard:spckey8" VKBoard:action="vkeyboard.VKhandlefocus('^');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey8" VKBoard:class="VKey"/>
+
+  <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:specialpadRow3">
+       <RDF:li resource="urn:VKBoard:spckey9"/>
+       <RDF:li resource="urn:VKBoard:spckey10"/>
+       <RDF:li resource="urn:VKBoard:spckey11"/>
+       <RDF:li resource="urn:VKBoard:spckey12"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:spckey9" VKBoard:label="&#59;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey9" VKBoard:action="vkeyboard.VKhandlefocus('&#59;');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey9" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey10" VKBoard:label="="/>
+   <VKBoard:Description about="urn:VKBoard:spckey10" VKBoard:action="vkeyboard.VKhandlefocus('=');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey10" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey11" VKBoard:label="&#37;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey11" VKBoard:action="vkeyboard.VKhandlefocus('&#37;');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey11" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey12" VKBoard:label="~"/>
+   <VKBoard:Description about="urn:VKBoard:spckey12" VKBoard:action="vkeyboard.VKhandlefocus('~');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey12" VKBoard:class="VKey"/>
+
+
+<!-- textNavPad definitions -->
+
+  <VKBoard:Bag>
+    <RDF:Seq about="urn:VKBoard:textNavPadRow1">
+      <RDF:li resource="urn:VKBoard:textNavkeyR11"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR12"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR13"/>
+    </RDF:Seq>
+  </VKBoard:Bag>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR11" VKBoard:label="Home"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR11" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR11" VKBoard:ttip="Move Cursor to Begining"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR11" VKBoard:action="vkeyboard.moveCursorHome();"/>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR12" VKBoard:label="End"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR12" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR12" VKBoard:ttip="Move Cursor to End"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR12" VKBoard:action="vkeyboard.moveCursorEnd();"/>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR13" VKBoard:label="CLR"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR13" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR13" VKBoard:ttip="Remove contents of field"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR13" VKBoard:action="vkeyboard.VKClearField();"/>
+
+<!--
+  <VKBoard:Bag>
+    <RDF:Seq about="urn:VKBoard:textNavPadRow2">
+      <RDF:li resource="urn:VKBoard:textNavkeyR21"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR22"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR23"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR24"/>
+    </RDF:Seq>
+  </VKBoard:Bag>
+-->
+  <VKBoard:Bag>
+    <RDF:Seq about="urn:VKBoard:textNavPadRow3">
+      <RDF:li resource="urn:VKBoard:textNavkeyR31"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR32"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR33"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR34"/>
+    </RDF:Seq>
+  </VKBoard:Bag>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR31" VKBoard:label="&#x21E6;"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR31" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR31" VKBoard:ttip=" Move Cursor Left"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR31" VKBoard:action="vkeyboard.moveCursorLeft();"/>
+
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR32" VKBoard:label="&#x21E7;"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR32" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR32" VKBoard:ttip=" Move Cursor UP"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR32" VKBoard:action="vkeyboard.moveCursorUp();"/>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR33" VKBoard:label="&#x21E9;"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR33" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR33" VKBoard:ttip=" Move Cursor Down"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR33" VKBoard:action="vkeyboard.moveCursorDown();"/>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR34" VKBoard:label="&#x21E8;"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR34" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR34" VKBoard:ttip=" Move Cursor Right"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR34" VKBoard:action="vkeyboard.moveCursorRight();"/>
+
+
+  </RDF:Description>
+</RDF:RDF>

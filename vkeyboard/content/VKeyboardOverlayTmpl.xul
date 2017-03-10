@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+// *** Copyright (c)2002, 2010 Jim Massey. All rights reserved  ***********
+// *** massey@stlouis-shopper.com ************
+// *** No Warranty - certified to work with nothing ***
+// *** developed to work with mozilla kiosk **** 
+-->
+
+<?xml-stylesheet href="chrome://vkeyboard/skin/VKeyboard.css" type="text/css"?>
+
+<?xml-stylesheet href="chrome://vkeyboard/content/gtoolbar.css" type="text/css"?>
+
+<!DOCTYPE overlay [
+<!ENTITY % vkeyboardTmplDTD SYSTEM "chrome://vkeyboard/locale/vkeyboardTmpl.dtd">
+%vkeyboardTmplDTD;
+]>
+
+
+<overlay id="VKeyboardOverlay"
+
+	xmlns:html="http://www.w3.org/TR/REC-html40"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+<!-- firefox -->
+
+  <toolbaritem id="urlbar-container">
+    <hbox id="vkboardURIBar" barisup="false" style="display: visible;" flex="400">
+      <button id="vkboardGO" label="&kbd.URIBar.GO.btn.label;" oncommand="vkeyboard.vkURIBarGo();">
+        <observes element="vkeyboardState" attribute="isexpanded" onbroadcast="vkeyboard.vKeyBoardURIBar('test');"/>
+      </button>
+      <textbox id="vkboardURItxt" value="" flex="1"/>
+    </hbox>
+    <textbox id="urlbar" style="display:visible;"/>
+  </toolbaritem>
+
+<menupopup id="menu_ToolsPopup">
+  <menuitem label="&ff.tools.menu.tgl.label;" 
+            oncommand="vkeyboard.hideVKeyboard();"
+            accesskey="V"/>
+</menupopup>
+
+<window id="main-window">
+
+<!-- <script type="&kbd.script1.type;" src="&kbd.script1.src;" /> -->
+<script type="text/javascript" src="VKeyboardTmpl.js" />
+
+<broadcasterset>
+  <broadcaster id="vkeyboardState" isexpanded="false"/>
+</broadcasterset>
+
+<gtoolbox id="VKboard_box" hidden='false'>
+  <gtoolbar id="VKboard1" grippytooltiptext="&kbd.Toolbar1.grippytip;"
+	UPgrippytooltiptext="&kbd.Toolbar1.UPgrippytip;" 
+	Collapsable="true"
+        upGrippy="down">
+   <vbox id="VKboard_alpha">
+    <hbox>
+      <hbox id="keyboardRow1" 
+            pack="start"
+            datasources="&keyboard.template.data;" 
+            querytype="rdf"
+            ref="urn:VKBoard:alphaRow1" flags="logging">
+
+
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  ontxt="rdf:VKBoard#ontxt"
+                  offtxt="rdf:VKBoard#offtxt"
+                  tooltiptext="rdf:VKBoard#ttip"
+                  oncommand="rdf:VKBoard#action"/>
+
+        </template>
+
+      </hbox>
+      <!-- static menu button. The menu popup gets filled from code  
+           on startup
+      -->
+      <hbox>
+         <button id="keyboardTGL" 
+                 label="TGL"
+                 max-width="45px"
+                 class="VKey"
+                 type="menu"
+                 tooltiptext="&kbd.TGL.btn.tip;">
+
+           <menupopup id="installedKeyboards"
+                      width="200px">
+             <menuitem label="Numeric KeyPad"
+                       oncommand="vkeyboard.VKtoggle_pad();"/>
+           </menupopup>
+
+         </button>
+      </hbox>
+
+    </hbox>
+
+
+      <hbox id="keyboardRow2"
+            datasources="&keyboard.template.data;"
+            querytype="rdf"
+            ref="urn:VKBoard:alphaRow2">
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  ontxt="rdf:VKBoard#ontxt"
+                  offtxt="rdf:VKBoard#offtxt"
+                  tooltiptext="rdf:VKBoard#ttip"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+
+      </hbox>
+      <hbox id="keyboardRow3"
+            datasources="&keyboard.template.data;"
+            ref="urn:VKBoard:alphaRow3">
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  ontxt="rdf:VKBoard#ontxt"
+                  offtxt="rdf:VKBoard#offtxt"
+                  tooltiptext="rdf:VKBoard#ttip"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+      </hbox>
+
+   </vbox>
+ <!-- </gtoolbar> -->
+<!--
+        <vbox>
+         <button label="DWN"
+                 class="VKey"
+                 oncommand="moveCursorDown();"/>
+         <button label="up"
+                 class="VKey"
+                 oncommand="moveCursorUp();"/>
+         <button label="Left"
+                 class="VKey"
+                 oncommand="moveCursorLeft();"/>
+         <button label="Right"
+                 class="VKey"
+                 oncommand="moveCursorRight();"/>
+
+        </vbox>
+-->
+
+<!-- number pad definitions -->
+   <gtoolbar id="VKnumpad" class="VKaux_pad"
+	   grippytooltiptext="&kbd.Toolbar2.grippytip;"
+            UPgrippytooltiptext="&kbd.Toolbar2.UPgrippytip;"
+	    Collapsable="false">
+    <vbox id="VKboard_numpad">
+      <hbox id="numpadRow1"
+            datasources="&keyboard.template.data;"
+            ref="urn:VKBoard:numpadRow1">
+
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+
+      </hbox>
+      <hbox id="numpadRow2"
+             datasources="&keyboard.template.data;"
+             ref="urn:VKBoard:numpadRow2">
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+      </hbox>
+      <hbox id="numpadRow3"
+            datasources="&keyboard.template.data;"
+            ref="urn:VKBoard:numpadRow3">
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+      </hbox>
+
+    </vbox>
+   </gtoolbar> 
+
+<!-- Special keypad -->
+  <gtoolbar id="VKspecialpad" class="VKaux_pad"
+	   grippytooltiptext="&kbd.Toolbar3.grippytip;"
+            UPgrippytooltiptext="&kbd.Toolbar3.UPgrippytip;"
+	    Collapsable="true">
+      <vbox id="VKspecialpadB">
+
+     <hbox id="specialpadRow1"
+            datasources="&keyboard.template.data;"
+            ref="urn:VKBoard:specialpadRow1">
+
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+
+      </hbox>
+      <hbox id="specialpadRow2"
+             datasources="&keyboard.template.data;"
+             ref="urn:VKBoard:specialpadRow2">
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+      </hbox>
+      <hbox id="specialpadRow3"
+            datasources="&keyboard.template.data;"
+            ref="urn:VKBoard:specialpadRow3">
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+      </hbox>
+
+      </vbox>
+   </gtoolbar>
+
+<!-- Text Nav keypad -->
+  <gtoolbar id="VKTextNavpad" class="VKaux_pad"
+	   grippytooltiptext="&kbd.Toolbar3.grippytip;"
+            UPgrippytooltiptext="&kbd.Toolbar3.UPgrippytip;"
+            collapsed="true"
+            moz-collapsed="true"
+	    Collapsable="false">
+      <vbox id="VKTextNavPadB">
+
+     <hbox id="textNavPadRow1"
+            datasources="&keyboard.template.data;"
+            ref="urn:VKBoard:textNavPadRow1">
+
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  tooltiptext="rdf:VKBoard#ttip"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+
+      </hbox>
+      <hbox id="textNavPadRow2"
+             datasources="&keyboard.template.data;"
+             ref="urn:VKBoard:textNavPadRow2">
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  tooltiptext="rdf:VKBoard#ttip"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+      </hbox>
+      <hbox id="textNavPadRow3"
+            datasources="&keyboard.template.data;"
+            ref="urn:VKBoard:textNavPadRow3">
+        <template>
+          <button uri="?"
+                  id="rdf:VKBoard#id"
+                  label="rdf:VKBoard#label"
+                  class="rdf:VKBoard#class"
+                  tooltiptext="rdf:VKBoard#ttip"
+                  oncommand="rdf:VKBoard#action"/>
+        </template>
+
+      </hbox>
+
+      </vbox>
+   </gtoolbar>
+
+ </gtoolbar>
+</gtoolbox> 
+
+
+</window>
+</overlay>

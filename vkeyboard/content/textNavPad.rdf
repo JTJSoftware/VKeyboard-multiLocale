@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<RDF:RDF
+    xmlns:VKBoard="VKBoard#"
+    xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description about="VKBoard">
+
+<!-- textNavPad definitions -->
+
+  <VKBoard:Bag>
+    <RDF:Seq about="urn:VKBoard:textNavPadRow1">
+      <RDF:li resource="urn:VKBoard:textNavkeyR11"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR12"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR13"/>
+    </RDF:Seq>
+  </VKBoard:Bag>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR11" VKBoard:label="Home"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR11" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR11" VKBoard:ttip="Move Cursor to Begining"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR11" VKBoard:action="vkeyboard.moveCursorHome();"/>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR12" VKBoard:label="End"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR12" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR12" VKBoard:ttip="Move Cursor to End"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR12" VKBoard:action="vkeyboard.moveCursorEnd();"/>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR13" VKBoard:label="CLR"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR13" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR13" VKBoard:ttip="Remove contents of field"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR13" VKBoard:action="vkeyboard.VKClearField();"/>
+
+<!--
+  <VKBoard:Bag>
+    <RDF:Seq about="urn:VKBoard:textNavPadRow2">
+      <RDF:li resource="urn:VKBoard:textNavkeyR21"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR22"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR23"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR24"/>
+    </RDF:Seq>
+  </VKBoard:Bag>
+-->
+  <VKBoard:Bag>
+    <RDF:Seq about="urn:VKBoard:textNavPadRow3">
+      <RDF:li resource="urn:VKBoard:textNavkeyR31"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR32"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR33"/>
+      <RDF:li resource="urn:VKBoard:textNavkeyR34"/>
+    </RDF:Seq>
+  </VKBoard:Bag>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR31" VKBoard:label="&#x21E6;"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR31" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR31" VKBoard:ttip=" Move Cursor Left"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR31" VKBoard:action="vkeyboard.moveCursorLeft();"/>
+
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR32" VKBoard:label="&#x21E7;"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR32" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR32" VKBoard:ttip=" Move Cursor UP"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR32" VKBoard:action="vkeyboard.moveCursorUp();"/>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR33" VKBoard:label="&#x21E9;"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR33" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR33" VKBoard:ttip=" Move Cursor Down"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR33" VKBoard:action="vkeyboard.moveCursorDown();"/>
+
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR34" VKBoard:label="&#x21E8;"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR34" VKBoard:class="VKey"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR34" VKBoard:ttip=" Move Cursor Right"/>
+    <VKBoard:Description about="urn:VKBoard:textNavkeyR34" VKBoard:action="vkeyboard.moveCursorRight();"/>
+
+
+
+ </RDF:Description>
+</RDF:RDF>

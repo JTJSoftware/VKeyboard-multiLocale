@@ -1,0 +1,265 @@
+/* 
+// *** Copyright (c)2002 Jim Massey. All rights reserved  ***********
+// *** massey@stlouis-shopper.com **************
+// *** No Warranty - certified to work with nothing ***
+// *** developed to work with mozilla kiosk **** 
+*/
+
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/*
+@import url("chrome://kiosk/skin/default/kiosk.css");
+@import url("chrome://kiosk/content/toolkit/gtoolbar/skin/gtoolbar.css");
+@import url("chrome://kiosk/content/toolkit/xbutton/style/xbutton.css");
+@import url("chrome://vkeyboard/content/gtoolbar.css");
+*/
+VKboard_box {
+    -moz-binding: url("chrome://vkeyboard/content/gtoolbar.xml#gtoolbox");
+}
+
+gtoolbox {
+    -moz-binding: url("chrome://vkeyboard/content/gtoolbar.xml#gtoolbox");
+}
+
+gtoolbar {
+   -moz-binding: url("chrome://vkeyboard/content/gtoolbar.xml#gtoolbar");
+}
+
+gtoolbargrippy {
+   -moz-binding: url("chrome://vkeyboard/content/gtoolbar.xml#gtoolbargrippy");
+}
+
+/*
+button {
+   -moz-binding: url("chrome://vkeyboard/content/toolkit/xbutton/xbl/xbutton.xml#button");
+}
+*/
+
+#VKboard_box {
+	cursor: arrow;
+}
+
+#alphaPadSpacer {
+	margin-right: 5px;
+}
+
+.VKey, VKeyB, xbutton {
+	border-style: outset;
+	border-color: black;
+	height: 20 !important;
+	min-width: 80 !important;
+	margin: 4px;
+}
+
+xbutton > .button-box {
+        background-color: #ffffee;
+}
+
+.VKey:hover, .VKeyB:hover {
+	/* border-style: inset; */
+	cursor: pointer;
+	color: #ff1111;
+}
+
+xbutton:hover:active {
+	border-style: inset;
+}
+
+button:hover:active {
+	border-style: inset;
+}
+
+.VKey {
+	min-height: 20px !important;
+	min-width: 30px !important;
+	max-height: 75px;
+	max-width: 240px;
+}
+
+
+.VKaux_pad {
+/*
+	border-style: solid;
+*/
+}
+
+/* ****** VKboard1 grippy style definitions ******
+******************************************* */
+
+gtoolbargrippy[tbgrippy-collapsed="true"] {
+	cursor: pointer;
+}
+
+#VKboard1 > gtoolbargrippy {
+	cursor: pointer;
+}
+
+#VKboard1 > gtoolbargrippy > .toolbargrippy-arrow {
+	min-width: 15px;
+	min-height: 100px;
+	background-color: #ffffff;
+	list-style-image: url("chrome://vkeyboard/content/images/VKeyboardV1.png");
+
+}
+
+#VKboard1 > gtoolbargrippy:hover > .toolbargrippy-arrow {
+	height: 50px;
+	width: 55px
+	background-color: #ffffff;
+	list-style-image: url("chrome://vkeyboard/content/images/VKeyboardV2.png");
+
+}
+
+#VKboard1 > gtoolbargrippy:hover:active > .toolbargrippy-arrow {
+	height: 50px;
+	width: 55px
+	background-color: #ffffff;
+	list-style-image: url("chrome://vkeyboard/content/images/VKeyboard.png");
+
+}
+
+#VKboard_alpha {
+
+    max-height: 120px !important;
+    border-style: none;
+
+    overflow: none;
+}
+
+gtoolbargrippy[moz_grippy_collapsed="true"][id="moz_tb_collapsed_VKboard1"] > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	width: 105px;
+	height: 20px;
+/*	background-color: #ffffff; */
+	list-style-image: url("chrome://vkeyboard/content/images/VKeyboardH1.png");
+}
+
+gtoolbargrippy[id="moz_tb_collapsed_VKboard1"]:hover > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	width: 105px;
+	height: 20px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKeyboardH2.png");
+}
+
+gtoolbargrippy[id="moz_tb_collapsed_VKboard1"]:active > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	width: 105px;
+	height: 20px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKeyboardH3.png");
+}
+
+/* **** VKnumpad grippy style definitions ****** 
+***************************************** */
+
+#VKnumpad > gtoolbargrippy {
+	cursor: pointer
+	visibility: hidden;
+}
+/*
+#VKnumpad > gtoolbargrippy > .toolbargrippy-arrow {
+	width: 10px;
+	height: 80px;
+	background-color: #ffffff;
+	list-style-image: url("chrome://vkeyboard/content/images/VKnumpad1.png");
+}
+*/
+gtoolbargrippy[id="moz_tb_collapsed_VKnumpad"] > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	min-width: 95px;
+	min-height: 26px;
+	background-color: #ffffff;
+	list-style-image: url("chrome://vkeyboard/content/images/VKnumpadH1.png");
+}
+
+gtoolbargrippy[id="moz_tb_collapsed_VKnumpad"]:hover > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	width: 95px;
+	height: 26px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKnumpadH2.png");
+}
+
+gtoolbargrippy[id="moz_tb_collapsed_VKnumpad"]:hover:active > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	width: 95px;
+	height: 26px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKnumpadH3.png");
+}
+
+/* ****** VKspecialpad grippy style definitions ******
+*********************************************** */
+
+#VKspecialpad > gtoolbargrippy {
+	cursor: pointer;
+	visibility: hidden;
+}
+/*
+#VKspecialpad > gtoolbargrippy > .toolbargrippy-arrow {
+	width: 10px;
+	height: 80px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKspecial1.png");
+}
+*/
+
+gtoolbargrippy[id="moz_tb_collapsed_VKspecialpad"] > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	min-width: 95px;
+	min-height: 26px;
+	background-color: #ffffff;
+	list-style-image: url("chrome://vkeyboard/content/images/VKspecialH1.png");
+}
+
+gtoolbargrippy[id="moz_tb_collapsed_VKspecialpad"]:hover > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	width: 95px;
+	height: 26px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKspecialH2.png");
+}
+
+gtoolbargrippy[id="moz_tb_collapsed_VKspecialpad"]:hover:active > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	width: 88px;
+	height: 26px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKspecialH3.png");
+}
+
+/* ****** VKTextNavPad grippy style definitions ******
+*********************************************** */
+
+#VKTextNavpad > gtoolbargrippy {
+	cursor: pointer;
+	visibility: hidden;
+}
+/*
+#VKTextNavpad > gtoolbargrippy > .toolbargrippy-arrow {
+	width: 10px;
+	height: 80px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKspecial1.png");
+}
+*/
+
+/* ****** Generic toolbar grippy collapsed style **************
+********* commented out - included for reference only ********* */
+/*
+toolbargrippy[tbgrippy-collapsed="true"] > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 3px;
+	width: 105px;
+	height: 20px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKeyboardc1.png");
+}
+
+toolbargrippy[tbgrippy-collapsed="true"]:hover > .toolbargrippy-arrow {
+	cursor: pointer;
+	margin: 1px 0px 1px 0px;
+	width: 105px;
+	height: 20px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKeyboardc2.png");
+}
+
+toolbargrippy[tbgrippy-collapsed="true"]:hover:active > .toolbargrippy-arrow {
+	margin: 1px 0px 1px 0px;
+	width: 105px;
+	height: 20px;
+	list-style-image: url("chrome://vkeyboard/content/images/VKeyboardc3.png");
+}
+*/
+

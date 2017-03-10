@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<RDF:RDF
+     xmlns:VKBoard="VKBoard#"
+     xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description about="VKBoard">
+
+<!-- special keypad -->
+  <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:specialpadRow1">
+       <RDF:li resource="urn:VKBoard:spckey1"/>
+       <RDF:li resource="urn:VKBoard:spckey2"/>
+       <RDF:li resource="urn:VKBoard:spckey3"/>
+       <RDF:li resource="urn:VKBoard:spckey4"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:spckey1" VKBoard:label="&#x270C;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey1" VKBoard:action="vkeyboard.VKhandlefocus('\u270C');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey1" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey2" VKBoard:label="&#x2702;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey2" VKBoard:action="vkeyboard.VKhandlefocus('\u2702');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey2" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey3" VKBoard:label="&#x2708;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey3" VKBoard:action="vkeyboard.VKhandlefocus('\u2708');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey3" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey4" VKBoard:label="&#x270D;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey4" VKBoard:action="vkeyboard.VKhandlefocus('\u270D');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey4" VKBoard:class="VKey"/>
+
+
+  <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:specialpadRow2">
+       <RDF:li resource="urn:VKBoard:spckey5"/>
+       <RDF:li resource="urn:VKBoard:spckey6"/>
+       <RDF:li resource="urn:VKBoard:spckey7"/>
+       <RDF:li resource="urn:VKBoard:spckey8"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:spckey5" VKBoard:label="&#x2714;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey5" VKBoard:action="vkeyboard.VKhandlefocus('\u2714');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey5" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey6" VKBoard:label="&#2717;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey6" VKBoard:action="vkeyboard.VKhandlefocus('\u2717');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey6" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey7" VKBoard:label="*&#x2736;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey7" VKBoard:action="vkeyboard.VKhandlefocus('\u2736');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey7" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey8" VKBoard:label="&#x2764;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey8" VKBoard:action="vkeyboard.VKhandlefocus('\u2764');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey8" VKBoard:class="VKey"/>
+
+  <VKBoard:Bag>
+     <RDF:Seq about="urn:VKBoard:specialpadRow3">
+       <RDF:li resource="urn:VKBoard:spckey9"/>
+       <RDF:li resource="urn:VKBoard:spckey10"/>
+       <RDF:li resource="urn:VKBoard:spckey11"/>
+       <RDF:li resource="urn:VKBoard:spckey12"/>
+     </RDF:Seq>
+   </VKBoard:Bag>
+
+   <VKBoard:Description about="urn:VKBoard:spckey9" VKBoard:label="&#x2762;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey9" VKBoard:action="vkeyboard.VKhandlefocus('\u2762');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey9" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey10" VKBoard:label="&#x2794;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey10" VKBoard:action="vkeyboard.VKhandlefocus('\u2794');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey10" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey11" VKBoard:label="&#x275D;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey11" VKBoard:action="vkeyboard.VKhandlefocus('\u275D');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey11" VKBoard:class="VKey"/>
+
+   <VKBoard:Description about="urn:VKBoard:spckey12" VKBoard:label="&#x275E;"/>
+   <VKBoard:Description about="urn:VKBoard:spckey12" VKBoard:action="vkeyboard.VKhandlefocus('\u275E');"/>
+   <VKBoard:Description about="urn:VKBoard:spckey12" VKBoard:class="VKey"/>
+
+
+  </RDF:Description>
+</RDF:RDF>

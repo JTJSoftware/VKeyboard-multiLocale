@@ -1,0 +1,28 @@
+<!--
+// *** Copyright (c)2002 Jim Massey. All rights reserved  ***********
+// *** massey@stlouis-shopper.com ************
+// *** No Warranty - certified to work with nothing ***
+// *** developed to work with mozilla kiosk VKeyboard**** 
+-->
+
+<!-- vkeyboard template datastore - in the dtd so it can default to locale -->
+<!ENTITY keyboard.template.data      "chrome://vkeyboard/content/ALTde-ATKey.rdf">
+
+<!-- ***** VKBoard ff tools menu overlay ***** -->
+<!ENTITY ff.tools.menu.tgl.label  "Toggle VKeyboard">
+
+<!-- ***** Vkeyboard vkboardURIBar Definitions ***** -->
+<!ENTITY kbd.URIBar.GO.btn.label  "GO">
+
+<!-- ***** Switch keyboards TGL menu button ***** -->
+<!ENTITY kbd.TGL.btn.tip   "Switch key boards">
+
+<!-- vkboard toolbox and toolbar localizable strings -->
+<!ENTITY kbd.Toolbar1.grippytip   "VKeyBoard click to Popup">
+<!ENTITY kbd.Toolbar1.UPgrippytip "Click to collapse keyboard">
+
+<!ENTITY kbd.Toolbar2.grippytip  "Numeric Keypad - click to Popup">
+<!ENTITY kbd.Toolbar2.UPgrippytip "Numeric Keypad">
+
+<!ENTITY kbd.Toolbar3.grippytip "Special Keypad - click to Popup">
+<!ENTITY kbd.Toolbar3.UPgrippytip "Special Keypad">
